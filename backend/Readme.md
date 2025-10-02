@@ -2,6 +2,8 @@
 
 A  full-stack Task Management System where users can create, update, and track tasks across projects
 
+![swagger](../images/swagger.png)
+
 #### 🔥 Requirement: [All features are implementd]
 
 ✅  Backend (Node.js + Express): `implemented`
