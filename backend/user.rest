@@ -1,0 +1,21 @@
+###  Create new User
+curl -X POST http://localhost:4000/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "admin@example.com",
+    "username": "admin",
+    "name": "admin",
+    "password": "12345"
+  }'
+
+### create another user
+
+curl -X POST http://localhost:4000/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "admin2@example.com",
+    "username": "admin2",
+    "name": "admin-two",
+    "password": "12345"
+  }'
+
