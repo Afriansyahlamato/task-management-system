@@ -4,8 +4,6 @@ Build a full-stack Task Management System where users can create, update, and tr
 
 #### 🔥 Quickstart
 
-
-
 Clone the project :
 
     git clone https://github.com/bappasahabapi/task-management-system.git
