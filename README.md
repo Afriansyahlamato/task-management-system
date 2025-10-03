@@ -1,6 +1,10 @@
 # task-management-system
 Build a full-stack Task Management System where users can create, update, and track tasks across projects.
 
+👉 [Frontend Output UI](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)
+
+👉 [Backend Swagger UI](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)
+
 
 #### 🔥 Quickstart
 
@@ -107,4 +111,7 @@ assignedUser, dueDate
 
 👉 [Step By Step executation:](https://github.com/bappasahabapi/task-management-system/blob/main/backend/Readme.md) 
 
-![swagger](./images/swagger.png)
+### Step By Step executation for Fronted:
+
+👉 [Step By Step executation:](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md) 
+
