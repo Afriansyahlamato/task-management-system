@@ -1,9 +1,12 @@
-# task-management-system
-Build a full-stack Task Management System where users can create, update, and track tasks across projects.
+# 🚀 Task Management System
+
+A **full-stack Task Management System** built with **Node.js (Express, MongoDB, TypeScript) for backend** and **React + Vite Typescript, Tailwind for frontend**.  
+
 
 👉 [Frontend Output UI](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)
-
 👉 [Backend Swagger UI](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)
+
+This guide will help you set up and run the project locally.
 
 
 #### 🔥 Quickstart
