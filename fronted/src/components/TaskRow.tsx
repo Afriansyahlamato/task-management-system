@@ -18,7 +18,7 @@ function Badge({
     neutral: "border-slate-300 text-slate-700 bg-white",
     low: "border-emerald-300 text-emerald-700 bg-emerald-50",
     medium: "border-amber-300 text-amber-800 bg-amber-50",
-    high: "border-rose-300 text-rose-800 bg-rose-50",
+    high: "border-rose-300 text-rose-800 bg-rose-100",
   };
   return (
     <span className={`${base} ${tones[tone] ?? tones.neutral}`} title={title}>
@@ -97,12 +97,17 @@ export default function TaskRow({
               </p>
             ) : null}
 
-            <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-slate-500">
+            <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-slate-500 ">
               <Badge tone="neutral" title="Due date">
                 Due: {t.due || "—"}
               </Badge>
-              <span aria-hidden>•</span>
-              <span>Updated: {new Date(t.updatedAt).toLocaleString()}</span>
+              <span aria-hidden>| </span>
+              <span>
+                Updated At ⏱️ :{" "}
+                {new Date(t.updatedAt).toLocaleTimeString("en-US", {
+                  timeZone: "Asia/Dhaka",
+                })}
+              </span>
             </div>
           </div>
 

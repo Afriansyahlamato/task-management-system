@@ -85,8 +85,9 @@ export default function TaskForm({
       <input
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        placeholder="Task title"
+        placeholder="Task title *"
         className="border rounded-lg px-3 py-2 md:col-span-2"
+        required
       />
 
       <select
@@ -94,9 +95,6 @@ export default function TaskForm({
         onChange={(e) => setProjectId(e.target.value)}
         className="border rounded-lg px-3 py-2"
       >
-        {/* No explicit “None” here since you want Kamal by default.
-            If you still want a None choice, add:
-            <option value="">— None —</option> */}
         {projects.map((p) => (
           <option key={p.id} value={p.id}>
             {p.name}
@@ -109,9 +107,9 @@ export default function TaskForm({
         onChange={(e) => setStatus(e.target.value as TaskStatus)}
         className="border rounded-lg px-3 py-2"
       >
-        <option value="todo">To Do</option>
+        <option value="todo">Pending</option>
         <option value="in_progress">In Progress</option>
-        <option value="done">Done</option>
+        <option value="done">Completed</option>
       </select>
 
       <select
