@@ -13,9 +13,9 @@
       "node",
       "express"
     ],
-    "allowImportingTsExtensions": true,
+    // "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
-    "noEmit": true
+    // "noEmit": true
   },
   "include": [
     "src"

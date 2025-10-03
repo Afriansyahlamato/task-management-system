@@ -1,6 +1,6 @@
-import { env } from './config/env.ts';
-import { connectMongo } from './config/db.ts';
-import { createApp } from './app.ts';
+import { env } from './config/env';
+import { connectMongo } from './config/db';
+import { createApp } from './app';
 
 async function start() {
   try {

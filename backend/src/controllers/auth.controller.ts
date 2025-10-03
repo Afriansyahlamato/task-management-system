@@ -1,8 +1,8 @@
 import type { Request, Response } from 'express';
-import { User } from '../models/User.ts';
+import { User } from '../models/User';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { env } from '../config/env.ts';
+import { env } from '../config/env';
 
 export async function register(req: Request, res: Response) {
   try {

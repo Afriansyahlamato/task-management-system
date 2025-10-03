@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import routes from './routes/index.ts';
-import swagger from './docs/swagger.ts';
+import routes from './routes/index';
+import swagger from './docs/swagger';
 
 export function createApp() {
   const app = express();

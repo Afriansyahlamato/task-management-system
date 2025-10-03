@@ -1,5 +1,5 @@
 import type { Request, Response } from 'express';
-import { Project } from '../models/Project.ts';
+import { Project } from '../models/Project';
 
 export async function listProjects(_req: Request, res: Response) {
   try {

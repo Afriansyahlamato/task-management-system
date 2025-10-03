@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { toJSONOpts } from './plugins/toJSON.ts';
+import { toJSONOpts } from './plugins/toJSON';
 
 const UserSchema = new mongoose.Schema(
   {

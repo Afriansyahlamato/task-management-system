@@ -1,9 +1,9 @@
 
 import type { Request, Response } from 'express';
 import mongoose, { Types } from 'mongoose';
-import { Task } from '../models/Task.ts';
-import { Project } from '../models/Project.ts';
-import { User } from '../models/User.ts'; 
+import { Task } from '../models/Task';
+import { Project } from '../models/Project';
+import { User } from '../models/User'; 
 
 export async function listTasks(req: Request, res: Response) {
   try {
