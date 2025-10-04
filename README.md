@@ -1,6 +1,6 @@
 # 🚀 Task Management System
 
-A **full-stack Task Management System** built with **Node.js (Express, MongoDB, TypeScript) for backend** and **React + Vite Typescript, Tailwind for frontend**.  
+A **full-stack Task Management System** built with `Node.js (Express, MongoDB, TypeScript)` for **backend** and `React + Vite Rudux, Typescript, Tailwind` for **frontend**.  
 
 
 #### Project Demo :point_down:
@@ -10,6 +10,20 @@ A **full-stack Task Management System** built with **Node.js (Express, MongoDB, 
 
 👉 [Frontend Output UI](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)
 👉 [Backend Swagger UI](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)
+
+
+**🔄 Data Flow Architecture**
+```mermaid
+flowchart TD
+    Client[Frontend React App] -->|HTTP/REST| API[Express Server]
+    API -->|Routes| Controllers
+    Controllers -->|Business Logic| Models
+    Models -->|Queries| Database[(MongoDB)]
+    Database --> Models
+    Models --> Controllers
+    Controllers --> API
+    API --> Client
+```
 
 This guide will help you set up and run the project locally.
 
