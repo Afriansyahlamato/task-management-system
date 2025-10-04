@@ -1,4 +1,6 @@
-# 🚀 Frontend Development Guide (React + Vite + Redux + Tailwind+Typescript)
+### 🚀 Frontend Development Guide 
+
+(React + Vite + Redux + Tailwind+Typescript)
 
 This document explains the **full journey of building this frontend** — from scratch to production-ready deployment.  
 
@@ -83,16 +85,12 @@ src/
 **🧪 9. Testing**
 - Use **TypeScript types** for compile-time safety.
 
-## 🚀 10. Build & Deployment
+**🚀 10. Build & Deployment**
 - Build for production:
   ```bash
   npm run build
   ```
-- run locally:
-  ```bash
-  npm run preview
-  ```
 **✅ Summary**
 By following these steps, the frontend goes from:
 - **Zero setup → Fully structured app → Production deployment**  
-with **React, Vite, Redux Toolkit, Tailwind, React Router, and JWT authentication**.
+

@@ -12,6 +12,25 @@ A **full-stack Task Management System** built with `Node.js (Express, MongoDB, T
 👉 [Backend Swagger UI](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)
 
 
+#### 🔥 Endpoints
+
+- `POST /auth/register` 
+    - { email, username, name, password }` -> `{ user, token }
+- `POST /auth/login` 
+    - { username, password }` -> `{ user, token }
+- `POST /projects`  (auth) 
+    - `{ name }`
+- `POST /tasks` (auth) 
+    - { id,projectId, title, description?, status?, priority?, due? }
+- `GET /projects` (auth)
+- `GET /tasks` (auth) query: `q,status,projectId,sort`
+- `GET /tasks/:id` (auth)
+- `PATCH /tasks/:id` (auth)
+- `DELETE /tasks/:id` (auth)
+
+---
+
+
 **🔄 Data Flow Architecture**
 ```mermaid
 flowchart TD
@@ -111,7 +130,6 @@ assignedUser, dueDate
 - Routes for Create, Read, Update, Delete. `(implemented)`
 
 
-
 ✅ Authentication: `(implemented)`
 
 - Implement JWT-based login.
@@ -129,11 +147,11 @@ assignedUser, dueDate
 
 ---
 
-### Step By Step executation for Backend:
+<!-- ### Step By Step executation for Backend:
 
 👉 [Step By Step executation:](https://github.com/bappasahabapi/task-management-system/blob/main/backend/Readme.md) 
 
 ### Step By Step executation for Fronted:
 
-👉 [Step By Step executation:](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md) 
+👉 [Step By Step executation:](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)  -->
 
