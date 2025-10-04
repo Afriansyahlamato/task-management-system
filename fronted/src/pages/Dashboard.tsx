@@ -39,6 +39,16 @@ export default function Dashboard() {
     [all]
   );
 
+  const pending = useMemo(
+    () => all.filter((t) => t.status === "todo").length,
+    [all]
+  );
+
+  const inProgress = useMemo(
+    () => all.filter((t) => t.status === "in_progress").length,
+    [all]
+  );
+
   async function addTask(values: Omit<Task, "id" | "createdAt" | "updatedAt">) {
     const res = await api.post("/tasks", values);
     dispatch(addTaskLocal(res.data));
@@ -72,13 +82,16 @@ export default function Dashboard() {
         <Card className="group rounded-xl border p-4 transition duration-200 hover:-translate-y-1 hover:shadow-lg">
           <h3 className="font-medium mb-2">🗂️ Overview</h3> <hr /> <br />
           <p className="text-slate-600">
-            📋 Total tasks: <b>{all.length}</b>
+            📋 Total tasks: <b>{all.length}</b> 
+          </p>
+          <p className="text-slate-600">
+            📈 In Progress: <b>{inProgress}</b>
+          </p>
+          <p className="text-slate-600">
+            ⏳ Pending: <b>{pending}</b>
           </p>
           <p className="text-slate-600">
             ✅ Completed: <b>{completed}</b>
-          </p>
-          <p className="text-slate-600">
-            ⏳ Pending: <b>{all.length - completed}</b>
           </p>
         </Card>
         {/* search and filters */}

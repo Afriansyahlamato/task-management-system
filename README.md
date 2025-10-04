@@ -5,7 +5,7 @@ A **full-stack Task Management System** built with `Node.js (Express, MongoDB, T
 
 #### Project Demo :point_down:
 
-[![Project Demo](./images/dashboard.png)](https://drive.google.com/file/d/1rI5VBwwmZSq0UnRMKzwE9Uw9Jit_hf0v/view?usp=sharing)
+<!-- [![Project Demo](./images/dashboard.png)](https://drive.google.com/file/d/1rI5VBwwmZSq0UnRMKzwE9Uw9Jit_hf0v/view?usp=sharing) -->
 
 
 👉 [Frontend Output UI](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)
@@ -61,7 +61,7 @@ Inside the task-management-system folder we have two folder. frontend , backend
 
 ---
 
-`Run backend`
+**🔲 Run backend**
 
 
 Go to the **backend folder** and then create the `.env` file in the inside the backend folder and paste the code from .env.example
@@ -96,7 +96,7 @@ and you will see this output in the terminal
 🚀 Doin Tech Server running on http://localhost:4000
 ```
 
-`Run fronted`
+**🔲 Run fronted**
 
 ```bash
 # Go to the fronted folder and install the packages and then run the server
